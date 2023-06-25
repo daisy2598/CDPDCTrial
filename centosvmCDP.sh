@@ -185,6 +185,7 @@ chmod -R 777 /opt/cloudera/parcels
 
 echo "-- Now CM is started and the next step is to automate using the CM API"
 
+pip install --upgrade pip
 pip install cm_client
 
 sed -i "s/YourHostname/localhost.localdomain/g" ~/CDPDCTrial/scripts/create_cluster.py
